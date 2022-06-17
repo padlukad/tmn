@@ -1,0 +1,92 @@
+$white: #F7F7F8;
+$black: #082242;
+$accent: #29B384;
+$disable: #ACB7C5;
+$grey: #40474F;
+$linear: linear-gradient(232.83deg, #165EBF -13.52%, #29B384 76.05%);
+
+
+%roboto-700{
+    font-family: 'Roboto-Bold';
+    font-weight: 700;
+}
+
+%roboto-500{
+    font-family: 'Roboto-medium';
+    font-weight: 500;
+}
+
+%roboto-400{
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+}
+
+%roboto-100{
+    font-family: 'Roboto-LightItalic';
+    font-weight: 100;
+}
+
+%btn-1{
+    max-width: 260px;
+    width: 100%;
+    height: 48px;
+    border: 2px solid $accent;
+    border-radius: 4px;
+    background-color: $accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %roboto-500;
+    line-height: 22px;
+    color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        background-color: #fff;
+        color: $accent;
+        transition: all .3s;
+    }
+}
+
+%btn-2{
+    max-width: 170px;
+    width: 100%;
+    height: 48px;
+    border: 2px solid $accent;
+    border-radius: 4px;
+    background-color: #fff;
+    color: $accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %roboto-500;
+    line-height: 22px;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        background-color: $accent;
+        color: #fff;
+        transition: all .3s;
+    }
+}
+
+%link{
+    color: $accent;
+    @extend %roboto-500;
+    position: relative;
+    transition: all .3s;
+    line-height: 22px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    &:hover{
+        border-bottom-color: $accent;
+    }
+    &::after{
+        content: '→';
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s;
+    }
+}

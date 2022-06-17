@@ -1,0 +1,14 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.link{
+    @extend %link;
+}
+button{
+    @extend %btn-1;
+    margin-top: 30px;
+}
+
+@import 'media';
